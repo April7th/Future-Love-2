@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell5Con2" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="430"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="430"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="HKB-XL-UJG">
+                        <rect key="frame" x="164" y="257" width="150" height="40"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="START" translatesAutoresizingMaskIntoConstraints="NO" id="rF2-6t-hvP">
+                        <rect key="frame" x="202" y="268" width="75" height="19"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3f-Hr-URw">
+                        <rect key="frame" x="239" y="215" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Convert two videos posted from you" translatesAutoresizingMaskIntoConstraints="NO" id="CnW-8J-jQb">
+                        <rect key="frame" x="115" y="221" width="248" height="14"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SWAP IMAgE WITH VIDEO" translatesAutoresizingMaskIntoConstraints="NO" id="egA-vf-nN9">
+                        <rect key="frame" x="81" y="131" width="317" height="72"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="c3f-Hr-URw" firstAttribute="top" secondItem="egA-vf-nN9" secondAttribute="bottom" constant="12" id="ENJ-fd-yYK"/>
+                <constraint firstItem="egA-vf-nN9" firstAttribute="leading" secondItem="c3f-Hr-URw" secondAttribute="trailing" constant="-158" id="Nba-Rg-gAU"/>
+                <constraint firstItem="HKB-XL-UJG" firstAttribute="leading" secondItem="c3f-Hr-URw" secondAttribute="trailing" constant="-75" id="TDi-X8-vV5"/>
+                <constraint firstItem="rF2-6t-hvP" firstAttribute="top" secondItem="c3f-Hr-URw" secondAttribute="bottom" constant="53" id="U4v-KW-WHV"/>
+                <constraint firstItem="rF2-6t-hvP" firstAttribute="leading" secondItem="c3f-Hr-URw" secondAttribute="trailing" constant="-37" id="Zqt-uc-dRg"/>
+                <constraint firstItem="c3f-Hr-URw" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aoI-xO-JpN"/>
+                <constraint firstItem="c3f-Hr-URw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eNt-6P-Daz"/>
+                <constraint firstItem="HKB-XL-UJG" firstAttribute="top" secondItem="c3f-Hr-URw" secondAttribute="bottom" constant="42" id="rUG-v3-7Vo"/>
+                <constraint firstItem="CnW-8J-jQb" firstAttribute="top" secondItem="c3f-Hr-URw" secondAttribute="bottom" constant="6" id="uYE-s6-bQh"/>
+                <constraint firstItem="CnW-8J-jQb" firstAttribute="leading" secondItem="c3f-Hr-URw" secondAttribute="trailing" constant="-124" id="vub-8Y-xM2"/>
+            </constraints>
+            <size key="customSize" width="478" height="430"/>
+            <point key="canvasLocation" x="319.08396946564886" y="26.760563380281692"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Convert two videos posted from you" width="248" height="14"/>
+        <image name="START" width="75" height="19"/>
+        <image name="SWAP IMAgE WITH VIDEO" width="317" height="72"/>
+        <image name="button" width="150" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellSwap3" customModule="FutureLove">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Success. Here is your video!" translatesAutoresizingMaskIntoConstraints="NO" id="AZj-Vh-khS">
+                        <rect key="frame" x="6" y="10" width="235" height="18"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhg-nt-Rza">
+                        <rect key="frame" x="11.333333333333343" y="37" width="320.66666666666663" height="164"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-kN-69a">
+                        <rect key="frame" x="171.66666666666666" y="107.66666666666667" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Yhg-nt-Rza" firstAttribute="top" secondItem="ajX-kN-69a" secondAttribute="bottom" constant="-70.666666666666671" id="1Mo-EV-XM0"/>
+                <constraint firstItem="Yhg-nt-Rza" firstAttribute="centerX" secondItem="ajX-kN-69a" secondAttribute="centerX" id="9NY-7i-muv"/>
+                <constraint firstItem="ajX-kN-69a" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="CjQ-Yh-b1u"/>
+                <constraint firstItem="ajX-kN-69a" firstAttribute="leading" secondItem="AZj-Vh-khS" secondAttribute="trailing" constant="-69.333333333333343" id="PcP-OC-px1"/>
+                <constraint firstItem="ajX-kN-69a" firstAttribute="top" secondItem="AZj-Vh-khS" secondAttribute="bottom" constant="79.666666666666671" id="UfP-kA-ats"/>
+                <constraint firstAttribute="bottom" secondItem="Yhg-nt-Rza" secondAttribute="bottom" constant="14" id="aEY-dI-hKk"/>
+                <constraint firstItem="ajX-kN-69a" firstAttribute="leading" secondItem="Yhg-nt-Rza" secondAttribute="trailing" constant="-160.33333333333334" id="fY7-7K-Y2J"/>
+                <constraint firstItem="ajX-kN-69a" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kmJ-Ej-Evn"/>
+            </constraints>
+            <size key="customSize" width="343" height="215"/>
+            <connections>
+                <outlet property="videoView" destination="Yhg-nt-Rza" id="Syp-GM-sBw"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="-14"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Success. Here is your video!" width="235" height="18"/>
+    </resources>
+</document>

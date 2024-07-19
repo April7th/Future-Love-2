@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Load View GameVC-->
+        <scene sceneID="XdZ-jJ-LPm">
+            <objects>
+                <viewController storyboardIdentifier="LoadViewGameVC" id="gJp-Lz-PWX" customClass="LoadViewGameVC" customModule="FutureLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2O4-hw-T36">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LlN-by-wYN"/>
+                        <color key="backgroundColor" red="0.95573490859999999" green="0.99205487969999995" blue="0.99918466809999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghb-Wc-hm3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3457.971014492754" y="868.52678571428567"/>
+        </scene>
+    </scenes>
+</document>

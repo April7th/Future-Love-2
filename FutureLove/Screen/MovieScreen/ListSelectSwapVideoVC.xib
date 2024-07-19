@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListSelectSwapVideoVC" customModule="FutureLove" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImage" destination="JAu-Xk-1FW" id="jo0-Rd-03T"/>
+                <outlet property="buttonBack" destination="KP3-7c-0hv" id="236-hZ-Bh2"/>
+                <outlet property="collectionViewGood" destination="mdq-r8-kfZ" id="MM6-c2-OQf"/>
+                <outlet property="collectionViewPage" destination="map-Rj-xJo" id="Sgk-nW-F6m"/>
+                <outlet property="userProfileButton" destination="mXZ-lW-8w3" id="rxM-HF-sjc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-r8-kfZ">
+                    <rect key="frame" x="0.0" y="155" width="393" height="697"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UyO-EB-fdI">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="W3A-ky-Zyl"/>
+                        <outlet property="delegate" destination="-1" id="zPJ-lp-Ebw"/>
+                    </connections>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="map-Rj-xJo">
+                    <rect key="frame" x="0.0" y="95" width="393" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qrt-ca-wui"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dyb-GW-Gak">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eTA-Sw-vIc"/>
+                        <outlet property="delegate" destination="-1" id="8si-mD-mZR"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP3-7c-0hv">
+                    <rect key="frame" x="30" y="30" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="bGa-Br-44a"/>
+                        <constraint firstAttribute="width" constant="60" id="uF0-Q6-4dW"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="menu-video"/>
+                    <connections>
+                        <action selector="MenuActionPro" destination="-1" eventType="touchDown" id="kNp-np-BPt"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JAu-Xk-1FW">
+                    <rect key="frame" x="333" y="45" width="30" height="30"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tr_cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXZ-lW-8w3">
+                    <rect key="frame" x="333" y="45" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="VYA-k0-wBg"/>
+                        <constraint firstAttribute="height" constant="30" id="vhP-06-mdg"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="noavatar"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tr_cornerRadius">
+                            <real key="value" value="19"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionNextProfile:" destination="-1" eventType="touchDown" id="g50-FF-4YA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.62352943419999995" green="0.43921568989999998" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="KP3-7c-0hv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="2ng-04-NJq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="map-Rj-xJo" secondAttribute="trailing" id="AV8-u7-d99"/>
+                <constraint firstItem="map-Rj-xJo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CGa-6d-jS4"/>
+                <constraint firstItem="JAu-Xk-1FW" firstAttribute="trailing" secondItem="mXZ-lW-8w3" secondAttribute="trailing" id="Fm9-rU-jBe"/>
+                <constraint firstItem="mXZ-lW-8w3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="Ka3-zs-zgJ"/>
+                <constraint firstAttribute="bottom" secondItem="mdq-r8-kfZ" secondAttribute="bottom" id="Mnb-B5-RnZ"/>
+                <constraint firstAttribute="trailing" secondItem="mdq-r8-kfZ" secondAttribute="trailing" id="Oh9-SA-XHE"/>
+                <constraint firstItem="mdq-r8-kfZ" firstAttribute="top" secondItem="map-Rj-xJo" secondAttribute="bottom" constant="10" id="RKl-LB-xPx"/>
+                <constraint firstItem="JAu-Xk-1FW" firstAttribute="top" secondItem="mXZ-lW-8w3" secondAttribute="top" id="Tcv-Zz-jBN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mXZ-lW-8w3" secondAttribute="trailing" constant="30" id="aA2-0Y-dMF"/>
+                <constraint firstItem="map-Rj-xJo" firstAttribute="top" secondItem="KP3-7c-0hv" secondAttribute="bottom" constant="5" id="bs2-BB-t3U"/>
+                <constraint firstItem="mdq-r8-kfZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="duS-mS-Nis"/>
+                <constraint firstItem="KP3-7c-0hv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="rXl-Gf-buP"/>
+                <constraint firstItem="JAu-Xk-1FW" firstAttribute="bottom" secondItem="mXZ-lW-8w3" secondAttribute="bottom" id="t8t-zl-52M"/>
+                <constraint firstItem="JAu-Xk-1FW" firstAttribute="leading" secondItem="mXZ-lW-8w3" secondAttribute="leading" id="xq4-CO-vp4"/>
+            </constraints>
+            <point key="canvasLocation" x="58.778625954198468" y="-33.098591549295776"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu-video" width="30" height="30"/>
+        <image name="noavatar" width="30" height="30"/>
+    </resources>
+</document>

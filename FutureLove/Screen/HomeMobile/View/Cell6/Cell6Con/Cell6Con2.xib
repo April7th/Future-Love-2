@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell6Con2" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="171"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="171"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="What will your face if in the video but you want" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-I4-KPV">
+                        <rect key="frame" x="38" y="93" width="320" height="14"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="Eoe-Ys-bXR">
+                        <rect key="frame" x="123" y="117" width="150" height="40"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="START" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-7r-uLf">
+                        <rect key="frame" x="161" y="127" width="75" height="19"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAo-D8-3k0">
+                        <rect key="frame" x="198" y="85.666666666666671" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SWAP ONE IMAGE WITH VIDEO TEMPALE" translatesAutoresizingMaskIntoConstraints="NO" id="mrY-Y3-e5c">
+                        <rect key="frame" x="10" y="10" width="376" height="72"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Eoe-Ys-bXR" firstAttribute="top" secondItem="kAo-D8-3k0" secondAttribute="bottom" constant="31.333333333333329" id="1Se-iG-KGk"/>
+                <constraint firstItem="Eoe-Ys-bXR" firstAttribute="leading" secondItem="kAo-D8-3k0" secondAttribute="trailing" constant="-75" id="2UG-Di-4ei"/>
+                <constraint firstItem="Wal-7r-uLf" firstAttribute="top" secondItem="kAo-D8-3k0" secondAttribute="bottom" constant="41.333333333333329" id="6Fw-2L-0JT"/>
+                <constraint firstItem="kAo-D8-3k0" firstAttribute="top" secondItem="mrY-Y3-e5c" secondAttribute="bottom" constant="3.6666666666666714" id="LI5-WJ-Etz"/>
+                <constraint firstItem="vRg-I4-KPV" firstAttribute="leading" secondItem="kAo-D8-3k0" secondAttribute="trailing" constant="-160" id="XWN-YF-VTU"/>
+                <constraint firstItem="mrY-Y3-e5c" firstAttribute="leading" secondItem="kAo-D8-3k0" secondAttribute="trailing" constant="-188" id="Xed-eJ-Dbc"/>
+                <constraint firstItem="kAo-D8-3k0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="apN-8S-5gw"/>
+                <constraint firstItem="Wal-7r-uLf" firstAttribute="leading" secondItem="kAo-D8-3k0" secondAttribute="trailing" constant="-37" id="d7a-4F-B30"/>
+                <constraint firstItem="vRg-I4-KPV" firstAttribute="top" secondItem="kAo-D8-3k0" secondAttribute="bottom" constant="7.3333333333333286" id="fnQ-Ql-lgR"/>
+                <constraint firstItem="kAo-D8-3k0" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="w3o-ln-lDC"/>
+            </constraints>
+            <connections>
+                <outlet property="image1" destination="mrY-Y3-e5c" id="VVz-b6-8uX"/>
+                <outlet property="image2" destination="vRg-I4-KPV" id="gqa-hU-95E"/>
+                <outlet property="image3" destination="Wal-7r-uLf" id="rmE-Hm-JiC"/>
+                <outlet property="image4" destination="Eoe-Ys-bXR" id="nd9-L7-fNT"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="START" width="75" height="19"/>
+        <image name="SWAP ONE IMAGE WITH VIDEO TEMPALE" width="376" height="72"/>
+        <image name="What will your face if in the video but you want" width="320" height="14"/>
+        <image name="button" width="150" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="videoItemCLVCell" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="245" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7df-wm-gt1">
+                        <rect key="frame" x="0.0" y="0.0" width="245" height="250"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-4I-hAy">
+                        <rect key="frame" x="0.0" y="0.0" width="245" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGreenColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-hT-A3w">
+                        <rect key="frame" x="72.666666666666671" y="75" width="100.00000000000001" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="ABC-GN-fem"/>
+                            <constraint firstAttribute="height" constant="100" id="kbB-Ix-dPE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-2B-WWe">
+                        <rect key="frame" x="0.0" y="229" width="245" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemPinkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="a4D-4I-hAy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1JV-3r-fFq"/>
+                <constraint firstAttribute="trailing" secondItem="R2u-2B-WWe" secondAttribute="trailing" id="2nC-uh-Bab"/>
+                <constraint firstItem="7df-wm-gt1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Be4-EV-a6t"/>
+                <constraint firstItem="a4D-4I-hAy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DCa-vm-BrC"/>
+                <constraint firstAttribute="trailing" secondItem="7df-wm-gt1" secondAttribute="trailing" id="FFU-Ze-ONo"/>
+                <constraint firstItem="gVd-hT-A3w" firstAttribute="centerY" secondItem="7df-wm-gt1" secondAttribute="centerY" id="Ij8-6p-PdK"/>
+                <constraint firstItem="7df-wm-gt1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J87-py-LFh"/>
+                <constraint firstAttribute="bottom" secondItem="R2u-2B-WWe" secondAttribute="bottom" id="Kst-Ao-tlG"/>
+                <constraint firstAttribute="bottom" secondItem="7df-wm-gt1" secondAttribute="bottom" id="R8I-3F-qgR"/>
+                <constraint firstItem="gVd-hT-A3w" firstAttribute="centerX" secondItem="7df-wm-gt1" secondAttribute="centerX" id="gVJ-4V-FPU"/>
+                <constraint firstItem="R2u-2B-WWe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rCS-ZP-ybW"/>
+                <constraint firstAttribute="trailing" secondItem="a4D-4I-hAy" secondAttribute="trailing" id="una-BS-fIw"/>
+            </constraints>
+            <size key="customSize" width="245" height="250"/>
+            <connections>
+                <outlet property="imageAnhSwap" destination="7df-wm-gt1" id="MYI-7S-Eze"/>
+                <outlet property="imageVideo" destination="gVd-hT-A3w" id="VKh-zZ-ehb"/>
+                <outlet property="labelName" destination="R2u-2B-WWe" id="heY-L6-9kt"/>
+                <outlet property="labelTime" destination="a4D-4I-hAy" id="0Ul-t3-nfV"/>
+            </connections>
+            <point key="canvasLocation" x="208.3969465648855" y="37.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

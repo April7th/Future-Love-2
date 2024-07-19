@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellSwap2" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="329"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="329"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Choose Your Image" translatesAutoresizingMaskIntoConstraints="NO" id="eob-Ob-tzx">
+                        <rect key="frame" x="29" y="20" width="152" height="16"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Ellipse 209" translatesAutoresizingMaskIntoConstraints="NO" id="IZe-qI-gts">
+                        <rect key="frame" x="55" y="64" width="98" height="98"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle 5046" translatesAutoresizingMaskIntoConstraints="NO" id="vol-Qv-Vol">
+                        <rect key="frame" x="144" y="24" width="141" height="189"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle 5047" translatesAutoresizingMaskIntoConstraints="NO" id="O6D-8l-C83">
+                        <rect key="frame" x="45" y="205" width="106" height="8"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle 5048" translatesAutoresizingMaskIntoConstraints="NO" id="hWP-L0-t0I">
+                        <rect key="frame" x="277" y="24" width="111" height="8"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Ellipse 209" translatesAutoresizingMaskIntoConstraints="NO" id="R9J-5w-RKL">
+                        <rect key="frame" x="279" y="64" width="98" height="98"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Video Template" translatesAutoresizingMaskIntoConstraints="NO" id="umE-9K-lV8">
+                        <rect key="frame" x="266" y="197" width="122" height="17"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKL-eS-fmq">
+                        <rect key="frame" x="214.66666666666666" y="164.66666666666666" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Frame 48097905" translatesAutoresizingMaskIntoConstraints="NO" id="tz3-AD-IsO">
+                        <rect key="frame" x="86" y="94" width="38" height="38"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="7oP-cp-vPD">
+                        <rect key="frame" x="251" y="269" width="150" height="40"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="F66-fA-Jh6">
+                        <rect key="frame" x="37" y="269" width="150" height="40"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbg-Ma-fDW">
+                        <rect key="frame" x="251" y="269" width="150" height="40"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Dowload">
+                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="btnDowloadClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="NTh-al-3zf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3M-bU-ygU">
+                        <rect key="frame" x="37" y="269" width="150" height="40"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Start">
+                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="btnStartClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dkd-6c-r92"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="H3M-bU-ygU" firstAttribute="centerX" secondItem="F66-fA-Jh6" secondAttribute="centerX" id="0I9-mv-Ets"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="top" secondItem="IZe-qI-gts" secondAttribute="bottom" constant="2.6666666666666572" id="1P4-x7-oz1"/>
+                <constraint firstItem="H3M-bU-ygU" firstAttribute="leading" secondItem="F66-fA-Jh6" secondAttribute="leading" id="25v-Hl-MjB"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="top" secondItem="vol-Qv-Vol" secondAttribute="bottom" constant="-48.333333333333343" id="3T0-wj-6Zx"/>
+                <constraint firstItem="7oP-cp-vPD" firstAttribute="leading" secondItem="JKL-eS-fmq" secondAttribute="trailing" constant="36.333333333333343" id="9ES-vR-GKr"/>
+                <constraint firstItem="umE-9K-lV8" firstAttribute="top" secondItem="JKL-eS-fmq" secondAttribute="bottom" constant="32.333333333333343" id="B0s-yB-3fi"/>
+                <constraint firstItem="jbg-Ma-fDW" firstAttribute="centerX" secondItem="7oP-cp-vPD" secondAttribute="centerX" id="C3U-JY-PqB"/>
+                <constraint firstItem="R9J-5w-RKL" firstAttribute="leading" secondItem="JKL-eS-fmq" secondAttribute="trailing" constant="64.333333333333343" id="Cf7-aJ-9nR"/>
+                <constraint firstItem="H3M-bU-ygU" firstAttribute="centerY" secondItem="F66-fA-Jh6" secondAttribute="centerY" id="F3V-D6-97j"/>
+                <constraint firstItem="hWP-L0-t0I" firstAttribute="leading" secondItem="JKL-eS-fmq" secondAttribute="trailing" constant="62.333333333333343" id="JX2-Ia-c07"/>
+                <constraint firstItem="H3M-bU-ygU" firstAttribute="top" secondItem="F66-fA-Jh6" secondAttribute="top" id="Krd-Wv-MbV"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="top" secondItem="tz3-AD-IsO" secondAttribute="bottom" constant="32.666666666666657" id="Ksu-y9-0vi"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="leading" secondItem="tz3-AD-IsO" secondAttribute="trailing" constant="90.666666666666657" id="Rsh-LB-ula"/>
+                <constraint firstItem="F66-fA-Jh6" firstAttribute="top" secondItem="JKL-eS-fmq" secondAttribute="bottom" constant="104.33333333333334" id="Sau-lA-zKQ"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="leading" secondItem="F66-fA-Jh6" secondAttribute="trailing" constant="27.666666666666657" id="SgY-2T-fGk"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="leading" secondItem="IZe-qI-gts" secondAttribute="trailing" constant="61.666666666666657" id="ULc-q1-bp3"/>
+                <constraint firstItem="jbg-Ma-fDW" firstAttribute="centerY" secondItem="7oP-cp-vPD" secondAttribute="centerY" id="UaC-Qk-qHD"/>
+                <constraint firstItem="umE-9K-lV8" firstAttribute="leading" secondItem="JKL-eS-fmq" secondAttribute="trailing" constant="51.333333333333343" id="Zq0-MC-iHk"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="a6Y-pp-abr"/>
+                <constraint firstItem="O6D-8l-C83" firstAttribute="top" secondItem="JKL-eS-fmq" secondAttribute="bottom" constant="40.333333333333343" id="beU-IG-wNv"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="leading" secondItem="vol-Qv-Vol" secondAttribute="trailing" constant="-70.333333333333343" id="fNE-Wm-PAa"/>
+                <constraint firstItem="jbg-Ma-fDW" firstAttribute="leading" secondItem="7oP-cp-vPD" secondAttribute="leading" id="huM-EN-YNm"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jSz-OK-uzH"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="top" secondItem="R9J-5w-RKL" secondAttribute="bottom" constant="2.6666666666666572" id="mFQ-is-nJi"/>
+                <constraint firstItem="jbg-Ma-fDW" firstAttribute="top" secondItem="7oP-cp-vPD" secondAttribute="top" id="pMC-Tt-ycg"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="top" secondItem="hWP-L0-t0I" secondAttribute="bottom" constant="132.66666666666666" id="qIV-TT-6jz"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="leading" secondItem="eob-Ob-tzx" secondAttribute="trailing" constant="33.666666666666657" id="sl3-UX-3H5"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="top" secondItem="eob-Ob-tzx" secondAttribute="bottom" constant="128.66666666666666" id="vJ7-ah-zeO"/>
+                <constraint firstItem="JKL-eS-fmq" firstAttribute="leading" secondItem="O6D-8l-C83" secondAttribute="trailing" constant="63.666666666666657" id="wZT-8b-sph"/>
+                <constraint firstItem="7oP-cp-vPD" firstAttribute="top" secondItem="JKL-eS-fmq" secondAttribute="bottom" constant="104.33333333333334" id="wnv-EO-wvm"/>
+            </constraints>
+            <size key="customSize" width="429" height="329"/>
+            <connections>
+                <outlet property="btnDownload" destination="jbg-Ma-fDW" id="ptk-ee-Cf6"/>
+                <outlet property="btnStart" destination="H3M-bU-ygU" id="sFL-iJ-mcy"/>
+                <outlet property="imageNew" destination="IZe-qI-gts" id="MdE-TD-2iN"/>
+                <outlet property="imageThumb" destination="R9J-5w-RKL" id="j53-sf-Owv"/>
+                <outlet property="imageUpdate" destination="tz3-AD-IsO" id="YeQ-0e-iif"/>
+            </connections>
+            <point key="canvasLocation" x="339.69465648854958" y="30.633802816901412"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Choose Your Image" width="152" height="16"/>
+        <image name="Ellipse 209" width="98" height="98"/>
+        <image name="Frame 48097905" width="38" height="38"/>
+        <image name="Rectangle 5046" width="141" height="189"/>
+        <image name="Rectangle 5047" width="106" height="8"/>
+        <image name="Rectangle 5048" width="111" height="8"/>
+        <image name="Video Template" width="122" height="17"/>
+        <image name="button" width="150" height="40"/>
+    </resources>
+</document>

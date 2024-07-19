@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellSwap1" customModule="FutureLove">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="360"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="juL-M4-nRi">
+                        <rect key="frame" x="20.333333333333343" y="55" width="370.66666666666663" height="275.33333333333331"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2w-Xn-ZyF">
+                        <rect key="frame" x="205.66666666666666" y="192.66666666666666" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Swap Video" translatesAutoresizingMaskIntoConstraints="NO" id="B9v-dB-ZPo">
+                        <rect key="frame" x="127" y="20" width="157" height="27"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="n2w-Xn-ZyF" firstAttribute="leading" secondItem="B9v-dB-ZPo" secondAttribute="trailing" constant="-78.333333333333343" id="0bD-3I-PwO"/>
+                <constraint firstItem="n2w-Xn-ZyF" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="12.666666666666657" id="IaY-7X-R1e"/>
+                <constraint firstItem="juL-M4-nRi" firstAttribute="centerX" secondItem="n2w-Xn-ZyF" secondAttribute="centerX" id="N3p-Yc-N2p"/>
+                <constraint firstItem="n2w-Xn-ZyF" firstAttribute="leading" secondItem="juL-M4-nRi" secondAttribute="trailing" constant="-185.33333333333334" id="XVR-Sp-9vM"/>
+                <constraint firstItem="n2w-Xn-ZyF" firstAttribute="top" secondItem="B9v-dB-ZPo" secondAttribute="bottom" constant="145.66666666666666" id="bRq-s6-UKW"/>
+                <constraint firstItem="juL-M4-nRi" firstAttribute="top" secondItem="n2w-Xn-ZyF" secondAttribute="bottom" constant="-137.66666666666666" id="nEI-KG-ZIp"/>
+                <constraint firstItem="n2w-Xn-ZyF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="rUN-BE-DpO"/>
+                <constraint firstItem="juL-M4-nRi" firstAttribute="centerY" secondItem="n2w-Xn-ZyF" secondAttribute="centerY" id="sEA-Ww-uw9"/>
+            </constraints>
+            <size key="customSize" width="424" height="383"/>
+            <connections>
+                <outlet property="videoPlayerView" destination="juL-M4-nRi" id="gcG-ca-dlb"/>
+            </connections>
+            <point key="canvasLocation" x="287.78625954198475" y="37.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Swap Video" width="157" height="27"/>
+    </resources>
+</document>

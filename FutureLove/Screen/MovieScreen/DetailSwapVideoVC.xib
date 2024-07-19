@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailSwapVideoVC" customModule="FutureLove" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBack" destination="eu9-0I-lwA" id="lxl-2R-bcB"/>
+                <outlet property="buttonDownloadSwap" destination="8wR-M3-8jB" id="cKX-9P-YDh"/>
+                <outlet property="buttonShare" destination="zcL-XU-AwI" id="TgN-5h-QHC"/>
+                <outlet property="imageUserAvatar" destination="bLB-jS-It9" id="XXQ-AR-E73"/>
+                <outlet property="imageViewCover" destination="zBP-re-eEo" id="q3v-ag-1Zs"/>
+                <outlet property="labelUserName" destination="Zqy-C8-h1U" id="5tX-8S-MGF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-0I-lwA">
+                    <rect key="frame" x="30" y="50" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="oC2-KJ-AGi"/>
+                        <constraint firstAttribute="height" constant="36" id="vYO-ze-cRo"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="back"/>
+                    <connections>
+                        <action selector="BackApp" destination="-1" eventType="touchDown" id="HFR-9F-NNO"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBP-re-eEo">
+                    <rect key="frame" x="121.66666666666669" y="69" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Mu2-Fg-Thp"/>
+                        <constraint firstAttribute="width" constant="150" id="zUq-Ua-ZtZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wR-M3-8jB">
+                    <rect key="frame" x="339" y="69" width="54" height="44"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="downloadbutton-2"/>
+                    <connections>
+                        <action selector="DownloadVideoSwap" destination="-1" eventType="touchDown" id="NpD-3l-OPd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcL-XU-AwI">
+                    <rect key="frame" x="20" y="96" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KSz-DH-O6O"/>
+                        <constraint firstAttribute="width" constant="40" id="N3H-oi-kbq"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="icons8-share-50"/>
+                    <connections>
+                        <action selector="shareLinkVideoSwap" destination="-1" eventType="touchDown" id="6Nj-2E-hfY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqy-C8-h1U">
+                    <rect key="frame" x="20" y="765" width="353" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" systemColor="systemGreenColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bLB-jS-It9">
+                    <rect key="frame" x="146.66666666666666" y="655" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="O2p-12-ulR"/>
+                        <constraint firstAttribute="height" constant="100" id="uEl-XU-CPJ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.62352943419999995" green="0.43921568989999998" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zqy-C8-h1U" secondAttribute="trailing" constant="20" id="5UH-Td-vnO"/>
+                <constraint firstItem="Zqy-C8-h1U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ee1-wX-W3A"/>
+                <constraint firstItem="8wR-M3-8jB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="J46-ir-H7L"/>
+                <constraint firstItem="eu9-0I-lwA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="K45-lg-eTR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Zqy-C8-h1U" secondAttribute="bottom" constant="30" id="L3o-Lp-bTi"/>
+                <constraint firstItem="8wR-M3-8jB" firstAttribute="top" secondItem="zBP-re-eEo" secondAttribute="top" id="MGa-6U-b5G"/>
+                <constraint firstItem="zcL-XU-AwI" firstAttribute="top" secondItem="eu9-0I-lwA" secondAttribute="bottom" constant="10" id="PnG-5Y-IZm"/>
+                <constraint firstItem="Zqy-C8-h1U" firstAttribute="top" secondItem="bLB-jS-It9" secondAttribute="bottom" constant="10" id="Ycs-Im-S4P"/>
+                <constraint firstItem="bLB-jS-It9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eer-Vo-LW8"/>
+                <constraint firstItem="zBP-re-eEo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fB5-tD-KQY"/>
+                <constraint firstItem="eu9-0I-lwA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="oHE-bs-B5L"/>
+                <constraint firstItem="zBP-re-eEo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="pfk-wg-ztL"/>
+                <constraint firstItem="zcL-XU-AwI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="sFn-Yp-JIJ"/>
+            </constraints>
+            <point key="canvasLocation" x="73" y="-32"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="24" height="24.333333969116211"/>
+        <image name="downloadbutton-2" width="30" height="30"/>
+        <image name="icons8-share-50" width="30" height="30"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

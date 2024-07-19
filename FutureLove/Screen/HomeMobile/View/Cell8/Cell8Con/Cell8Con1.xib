@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell8Con1" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="349"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="349"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 22" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-Vi-JPe">
+                        <rect key="frame" x="15" y="21" width="430" height="307"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Designer (1) 2" translatesAutoresizingMaskIntoConstraints="NO" id="oW3-dm-cZb">
+                        <rect key="frame" x="114" y="93" width="233" height="233"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="oW3-dm-cZb" firstAttribute="leading" secondItem="RCl-Vi-JPe" secondAttribute="trailing" constant="-331" id="4S1-W1-njX"/>
+                <constraint firstItem="RCl-Vi-JPe" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="b2S-Lr-Faq"/>
+                <constraint firstItem="RCl-Vi-JPe" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="cQg-Cf-8jN"/>
+                <constraint firstItem="oW3-dm-cZb" firstAttribute="top" secondItem="RCl-Vi-JPe" secondAttribute="bottom" constant="-235" id="ezq-Fv-4H7"/>
+            </constraints>
+            <size key="customSize" width="460" height="349"/>
+            <point key="canvasLocation" x="224.42748091603053" y="-9.5070422535211279"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Designer (1) 2" width="233" height="233"/>
+        <image name="Rectangle 22" width="430" height="307"/>
+    </resources>
+</document>

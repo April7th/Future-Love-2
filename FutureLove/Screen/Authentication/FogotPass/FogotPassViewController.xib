@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FogotPassViewController" customModule="FutureLove" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="9nd-JS-5Xg" id="c30-LD-x5o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroudLogin" translatesAutoresizingMaskIntoConstraints="NO" id="7Ok-pF-uIk">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zl7-pM-oGH">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hK-Z3-uYb">
+                            <rect key="frame" x="8" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="YUV-Df-WPy"/>
+                                <constraint firstAttribute="height" constant="44" id="wme-09-T9V"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="back"/>
+                            <connections>
+                                <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="rhQ-TI-ef9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2i-dl-SQ2">
+                            <rect key="frame" x="60" y="11.666666666666671" width="121" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="m2i-dl-SQ2" firstAttribute="centerY" secondItem="8hK-Z3-uYb" secondAttribute="centerY" id="5Ha-qC-2vC"/>
+                        <constraint firstItem="8hK-Z3-uYb" firstAttribute="leading" secondItem="Zl7-pM-oGH" secondAttribute="leading" constant="8" id="ask-Dc-Ara"/>
+                        <constraint firstItem="m2i-dl-SQ2" firstAttribute="leading" secondItem="8hK-Z3-uYb" secondAttribute="trailing" constant="8" id="pZa-Q8-Fqn"/>
+                        <constraint firstAttribute="height" constant="44" id="sdO-YL-XVm"/>
+                        <constraint firstItem="8hK-Z3-uYb" firstAttribute="centerY" secondItem="Zl7-pM-oGH" secondAttribute="centerY" id="sia-3Q-KZO"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email..." textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9nd-JS-5Xg">
+                    <rect key="frame" x="16" y="133" width="361" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="I9k-lm-kkK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tr_cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT8-wv-OIv">
+                    <rect key="frame" x="16" y="207" width="361" height="44"/>
+                    <color key="backgroundColor" name="mainOrange"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="EPl-tS-ZAc"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Reset Password"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tr_cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="resetPasswordBtn:" destination="-1" eventType="touchUpInside" id="yRB-BC-OBW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zl7-pM-oGH" secondAttribute="trailing" id="7uj-fm-tSW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Ok-pF-uIk" secondAttribute="trailing" id="CKw-de-ehp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gT8-wv-OIv" secondAttribute="trailing" constant="16" id="EDb-PR-Yh6"/>
+                <constraint firstItem="gT8-wv-OIv" firstAttribute="top" secondItem="9nd-JS-5Xg" secondAttribute="bottom" constant="30" id="HHp-vn-Q0G"/>
+                <constraint firstItem="9nd-JS-5Xg" firstAttribute="top" secondItem="Zl7-pM-oGH" secondAttribute="bottom" constant="30" id="Mml-vQ-QDa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9nd-JS-5Xg" secondAttribute="trailing" constant="16" id="c0O-Jh-QLh"/>
+                <constraint firstItem="Zl7-pM-oGH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="htZ-QS-FSh"/>
+                <constraint firstItem="9nd-JS-5Xg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="j80-fx-Xn4"/>
+                <constraint firstItem="7Ok-pF-uIk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jDX-dL-TIY"/>
+                <constraint firstItem="7Ok-pF-uIk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kO5-Mj-lWN"/>
+                <constraint firstAttribute="bottom" secondItem="7Ok-pF-uIk" secondAttribute="bottom" id="t7L-gm-S2D"/>
+                <constraint firstItem="gT8-wv-OIv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uGq-09-rzN"/>
+                <constraint firstItem="Zl7-pM-oGH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uYN-Va-JMQ"/>
+            </constraints>
+            <point key="canvasLocation" x="45" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="24" height="24.333333969116211"/>
+        <image name="backgroudLogin" width="360" height="800"/>
+        <namedColor name="mainOrange">
+            <color red="0.9179999828338623" green="0.37599998712539673" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

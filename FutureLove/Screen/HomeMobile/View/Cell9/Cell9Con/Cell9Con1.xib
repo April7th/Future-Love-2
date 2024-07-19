@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell9Con1" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="355"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="355"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 64" translatesAutoresizingMaskIntoConstraints="NO" id="DMN-BM-VCP">
+                        <rect key="frame" x="86" y="20" width="195" height="193"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Tinder’s new $500 feature gives the green light to harassment – if you can afford it" translatesAutoresizingMaskIntoConstraints="NO" id="0Xj-gj-sx6">
+                        <rect key="frame" x="93" y="226" width="181" height="75"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5e-8S-9MD">
+                        <rect key="frame" x="183.66666666666666" y="177.66666666666666" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="P5e-8S-9MD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="4mD-G4-EMC"/>
+                <constraint firstItem="P5e-8S-9MD" firstAttribute="top" secondItem="DMN-BM-VCP" secondAttribute="bottom" constant="-35.333333333333343" id="Yj8-n8-vMh"/>
+                <constraint firstItem="P5e-8S-9MD" firstAttribute="leading" secondItem="DMN-BM-VCP" secondAttribute="trailing" constant="-97.333333333333343" id="rli-Xp-Pvu"/>
+                <constraint firstItem="P5e-8S-9MD" firstAttribute="leading" secondItem="0Xj-gj-sx6" secondAttribute="trailing" constant="-90.333333333333343" id="vdH-pN-jQC"/>
+                <constraint firstItem="0Xj-gj-sx6" firstAttribute="top" secondItem="P5e-8S-9MD" secondAttribute="bottom" constant="48.333333333333343" id="xsu-1t-9NT"/>
+                <constraint firstItem="P5e-8S-9MD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yEP-ME-u63"/>
+            </constraints>
+            <size key="customSize" width="367" height="355"/>
+            <point key="canvasLocation" x="222.13740458015266" y="16.549295774647888"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 64" width="195" height="193"/>
+        <image name="Tinder’s new $500 feature gives the green light to harassment – if you can afford it" width="181" height="75"/>
+    </resources>
+</document>

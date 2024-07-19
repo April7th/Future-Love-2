@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Tinder’s new $500 feature gives the green light to harassment – if you can afford it.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

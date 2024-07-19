@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell8Con2" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="364"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="364"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Log in" translatesAutoresizingMaskIntoConstraints="NO" id="g9L-4y-vM4">
+                        <rect key="frame" x="131" y="57" width="102" height="36"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle 61" translatesAutoresizingMaskIntoConstraints="NO" id="cWy-Gk-GzZ">
+                        <rect key="frame" x="33" y="162" width="298" height="2"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle 62" translatesAutoresizingMaskIntoConstraints="NO" id="JzU-J6-1tS">
+                        <rect key="frame" x="33" y="216" width="298" height="2"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle 63" translatesAutoresizingMaskIntoConstraints="NO" id="5LF-vM-A26">
+                        <rect key="frame" x="49" y="270" width="266" height="40"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Confirm password" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-qK-NCt">
+                        <rect key="frame" x="105" y="281" width="155" height="18"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WF-1I-61A">
+                        <rect key="frame" x="182.66666666666666" y="182" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yD7-DA-AdG">
+                        <rect key="frame" x="33" y="181" width="300" height="34"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLV-dp-TWU">
+                        <rect key="frame" x="33" y="128" width="300" height="34"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JzU-J6-1tS" firstAttribute="top" secondItem="6WF-1I-61A" secondAttribute="bottom" constant="34" id="0wp-Yg-ZVT"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="leading" secondItem="QLV-dp-TWU" secondAttribute="trailing" constant="-150.33333333333334" id="4r4-m6-lgh"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="top" secondItem="cWy-Gk-GzZ" secondAttribute="bottom" constant="18" id="5ot-dW-7V3"/>
+                <constraint firstItem="5LF-vM-A26" firstAttribute="top" secondItem="6WF-1I-61A" secondAttribute="bottom" constant="88" id="KKR-GR-QKV"/>
+                <constraint firstItem="yD7-DA-AdG" firstAttribute="top" secondItem="6WF-1I-61A" secondAttribute="bottom" constant="-1" id="Tly-Cy-zFO"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="leading" secondItem="5LF-vM-A26" secondAttribute="trailing" constant="-132.33333333333334" id="WWZ-2e-sp9"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="top" secondItem="QLV-dp-TWU" secondAttribute="bottom" constant="20" id="WrI-tK-eGO"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="leading" secondItem="yA0-qK-NCt" secondAttribute="trailing" constant="-77.333333333333343" id="e0v-6q-Iqt"/>
+                <constraint firstItem="yA0-qK-NCt" firstAttribute="top" secondItem="6WF-1I-61A" secondAttribute="bottom" constant="99" id="gJS-f2-ifY"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ibL-lr-W7Q"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="leading" secondItem="cWy-Gk-GzZ" secondAttribute="trailing" constant="-148.33333333333334" id="jIi-mN-za3"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="top" secondItem="g9L-4y-vM4" secondAttribute="bottom" constant="89" id="kpX-yQ-i6s"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="leading" secondItem="g9L-4y-vM4" secondAttribute="trailing" constant="-50.333333333333343" id="kw1-1F-PPo"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="leading" secondItem="yD7-DA-AdG" secondAttribute="trailing" constant="-150.33333333333334" id="oFG-FM-a8c"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="owR-0R-Eba"/>
+                <constraint firstItem="6WF-1I-61A" firstAttribute="leading" secondItem="JzU-J6-1tS" secondAttribute="trailing" constant="-148.33333333333334" id="r8B-Xk-sN9"/>
+            </constraints>
+            <size key="customSize" width="365" height="364"/>
+            <point key="canvasLocation" x="309.16030534351142" y="45.774647887323944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Confirm password" width="155" height="18"/>
+        <image name="Log in" width="102" height="36"/>
+        <image name="Rectangle 61" width="298" height="2"/>
+        <image name="Rectangle 62" width="298" height="2"/>
+        <image name="Rectangle 63" width="266" height="40"/>
+    </resources>
+</document>

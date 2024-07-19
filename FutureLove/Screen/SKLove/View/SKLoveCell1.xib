@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SKLoveCell1" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logohome" translatesAutoresizingMaskIntoConstraints="NO" id="A5F-IY-HJy">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="101"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="vector" translatesAutoresizingMaskIntoConstraints="NO" id="kME-wa-055">
+                        <rect key="frame" x="384" y="38" width="26" height="24"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="A5F-IY-HJy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DAS-xU-vc3"/>
+                <constraint firstItem="kME-wa-055" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="EDw-Be-e9A"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="kME-wa-055" secondAttribute="trailing" constant="20" id="TpE-ev-JU3"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="kME-wa-055" secondAttribute="top" constant="21" id="bB1-Hm-Ygd"/>
+                <constraint firstItem="A5F-IY-HJy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vyg-xV-dIh"/>
+            </constraints>
+            <point key="canvasLocation" x="83" y="-11"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logohome" width="126" height="101"/>
+        <image name="vector" width="26" height="24"/>
+    </resources>
+</document>

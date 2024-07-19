@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoTemplateCLVCell" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="306"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="249" height="306"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="geo-C1-REO">
+                        <rect key="frame" x="0.0" y="0.0" width="249" height="306"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thL-BT-A4e">
+                        <rect key="frame" x="0.0" y="285.66666666666669" width="249" height="20.333333333333314"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGreenColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNP-1C-2tV">
+                        <rect key="frame" x="0.0" y="285.66666666666669" width="249" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemOrangeColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="geo-C1-REO" secondAttribute="bottom" id="Eke-Ut-0E1"/>
+                <constraint firstItem="thL-BT-A4e" firstAttribute="top" secondItem="oNP-1C-2tV" secondAttribute="bottom" id="JQI-zD-VQe"/>
+                <constraint firstAttribute="trailing" secondItem="thL-BT-A4e" secondAttribute="trailing" id="MfY-79-GLP"/>
+                <constraint firstAttribute="bottom" secondItem="thL-BT-A4e" secondAttribute="bottom" id="NjE-ZF-EvH"/>
+                <constraint firstItem="geo-C1-REO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QyQ-pQ-wee"/>
+                <constraint firstItem="geo-C1-REO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SDh-Lh-8KW"/>
+                <constraint firstItem="thL-BT-A4e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XF0-rp-PZQ"/>
+                <constraint firstAttribute="trailing" secondItem="geo-C1-REO" secondAttribute="trailing" id="XxH-kW-q8D"/>
+                <constraint firstAttribute="trailing" secondItem="oNP-1C-2tV" secondAttribute="trailing" id="las-us-AhT"/>
+                <constraint firstItem="oNP-1C-2tV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zww-1y-gPy"/>
+            </constraints>
+            <size key="customSize" width="249" height="306"/>
+            <connections>
+                <outlet property="imageVideo" destination="geo-C1-REO" id="HfY-v9-dZT"/>
+                <outlet property="labelName" destination="thL-BT-A4e" id="TlC-Eb-Npr"/>
+                <outlet property="labelTimeRun" destination="oNP-1C-2tV" id="ep1-lq-G3q"/>
+            </connections>
+            <point key="canvasLocation" x="211.4503816793893" y="57.04225352112676"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

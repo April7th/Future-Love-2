@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCollectionViewCell" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="106"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DKI-2c-Oze">
+                        <rect key="frame" x="10" y="10" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="9q3-yd-ebh"/>
+                            <constraint firstAttribute="height" constant="36" id="DXy-bN-8yE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="tr_cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4wR-qV-JrO">
+                        <rect key="frame" x="56" y="10" width="353" height="86"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="4wR-qV-JrO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Eev-kO-hae"/>
+                <constraint firstAttribute="bottom" secondItem="4wR-qV-JrO" secondAttribute="bottom" constant="10" id="HyQ-co-rlm"/>
+                <constraint firstItem="DKI-2c-Oze" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="I0I-62-DN7"/>
+                <constraint firstItem="DKI-2c-Oze" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="QW1-PT-kEx"/>
+                <constraint firstItem="4wR-qV-JrO" firstAttribute="leading" secondItem="DKI-2c-Oze" secondAttribute="trailing" constant="10" id="gSy-VA-Z3r"/>
+                <constraint firstAttribute="trailing" secondItem="4wR-qV-JrO" secondAttribute="trailing" constant="10" id="wf3-Lq-SF7"/>
+            </constraints>
+            <size key="customSize" width="419" height="106"/>
+            <connections>
+                <outlet property="imageAvatar" destination="DKI-2c-Oze" id="lps-KI-Vv3"/>
+                <outlet property="textMain" destination="4wR-qV-JrO" id="URY-6T-kfY"/>
+            </connections>
+            <point key="canvasLocation" x="203.81679389312976" y="-44.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "29BB6818-9467-4795-A019-1012DAC7FB56"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48C7FA37-5EC1-4917-885E-C09B8FD5D2C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FutureLove/Screen/Love/LoveViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
+            landmarkName = "startEventBtn(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "48C7FA37-5EC1-4917-885E-C09B8FD5D2C5 - a5cb8279929c36e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;FutureLove.LoveModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FutureLove.LoveViewController.startEventBtn(Any) -&gt; ()"
+                  moduleName = "FutureLove"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinn/Desktop/COMPANY/FutureLove-main/SourceTree/FutureLove/Screen/Love/LoveViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "347"
+                  endingLineNumber = "347"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  uuid = "48C7FA37-5EC1-4917-885E-C09B8FD5D2C5 - a5cb8279929c36e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;FutureLove.LoveModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FutureLove.LoveViewController.startEventBtn(Any) -&gt; ()"
+                  moduleName = "FutureLove"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinn/Desktop/COMPANY/FutureLove-main/SourceTree/FutureLove/Screen/Love/LoveViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "347"
+                  endingLineNumber = "347"
+                  offsetFromSymbolStart = "428">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

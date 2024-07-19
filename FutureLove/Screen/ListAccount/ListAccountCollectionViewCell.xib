@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListAccountCollectionViewCell" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-IK-9Pk">
+                        <rect key="frame" x="30" y="0.0" width="247" height="89"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="mainOrange"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSr-Ie-CzZ">
+                        <rect key="frame" x="277" y="0.0" width="150" height="89"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="wlx-ln-9Zd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGreenColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="TSr-Ie-CzZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RmH-es-geM"/>
+                <constraint firstAttribute="bottom" secondItem="TSr-Ie-CzZ" secondAttribute="bottom" id="Uo4-Hl-qCh"/>
+                <constraint firstAttribute="trailing" secondItem="TSr-Ie-CzZ" secondAttribute="trailing" symbolic="YES" id="Vui-bh-pYj"/>
+                <constraint firstItem="IZT-IK-9Pk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="o0E-i9-i6H"/>
+                <constraint firstItem="TSr-Ie-CzZ" firstAttribute="leading" secondItem="IZT-IK-9Pk" secondAttribute="trailing" id="qc4-P0-II6"/>
+                <constraint firstItem="IZT-IK-9Pk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="uBw-EK-Vlz"/>
+                <constraint firstAttribute="bottom" secondItem="IZT-IK-9Pk" secondAttribute="bottom" id="vqE-56-cLW"/>
+            </constraints>
+            <size key="customSize" width="427" height="89"/>
+            <connections>
+                <outlet property="labelAccount" destination="IZT-IK-9Pk" id="Jpq-r7-lTa"/>
+                <outlet property="labelTime" destination="TSr-Ie-CzZ" id="Ndb-tr-KVq"/>
+            </connections>
+            <point key="canvasLocation" x="336.64122137404581" y="12.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="mainOrange">
+            <color red="0.9179999828338623" green="0.37599998712539673" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

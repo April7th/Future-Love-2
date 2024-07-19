@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell2Con2" customModule="FutureLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="428"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="428"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="ARE YOU IN LOVE OR ARE YOU MARRIED_ WHAT WILL YOUR CHILDREN LOOK LIKE_" translatesAutoresizingMaskIntoConstraints="NO" id="mLe-q3-uep">
+                        <rect key="frame" x="35" y="78" width="386" height="162"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="CLICK NOW BUT LOOK YOUR CHILD IN THE FUTURE" translatesAutoresizingMaskIntoConstraints="NO" id="QmA-8D-aZ2">
+                        <rect key="frame" x="57" y="267" width="343" height="11"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="9eE-Eh-JAS">
+                        <rect key="frame" x="153" y="319" width="150" height="40"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkq-0C-5If">
+                        <rect key="frame" x="228" y="214" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="START" translatesAutoresizingMaskIntoConstraints="NO" id="s2H-BF-LFt">
+                        <rect key="frame" x="191" y="330" width="75" height="19"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="mLe-q3-uep" firstAttribute="leading" secondItem="Jkq-0C-5If" secondAttribute="trailing" constant="-193" id="0fI-UK-vi3"/>
+                <constraint firstItem="Jkq-0C-5If" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="DHP-Vs-2aF"/>
+                <constraint firstItem="Jkq-0C-5If" firstAttribute="top" secondItem="mLe-q3-uep" secondAttribute="bottom" constant="-26" id="IlZ-hq-jnQ"/>
+                <constraint firstItem="QmA-8D-aZ2" firstAttribute="leading" secondItem="Jkq-0C-5If" secondAttribute="trailing" constant="-171" id="L5i-NT-UQQ"/>
+                <constraint firstItem="9eE-Eh-JAS" firstAttribute="top" secondItem="Jkq-0C-5If" secondAttribute="bottom" constant="105" id="M8Z-c6-ETx"/>
+                <constraint firstItem="Jkq-0C-5If" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="P66-eT-SpH"/>
+                <constraint firstItem="9eE-Eh-JAS" firstAttribute="leading" secondItem="Jkq-0C-5If" secondAttribute="trailing" constant="-75" id="U37-cF-5Hl"/>
+                <constraint firstItem="QmA-8D-aZ2" firstAttribute="top" secondItem="Jkq-0C-5If" secondAttribute="bottom" constant="53" id="a1B-b5-gPh"/>
+                <constraint firstItem="s2H-BF-LFt" firstAttribute="top" secondItem="Jkq-0C-5If" secondAttribute="bottom" constant="116" id="hnb-By-oHa"/>
+                <constraint firstItem="s2H-BF-LFt" firstAttribute="leading" secondItem="Jkq-0C-5If" secondAttribute="trailing" constant="-37" id="k7D-Yi-06t"/>
+            </constraints>
+            <size key="customSize" width="456" height="428"/>
+            <point key="canvasLocation" x="316.03053435114504" y="25.35211267605634"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ARE YOU IN LOVE OR ARE YOU MARRIED_ WHAT WILL YOUR CHILDREN LOOK LIKE_" width="386" height="162"/>
+        <image name="CLICK NOW BUT LOOK YOUR CHILD IN THE FUTURE" width="343" height="11"/>
+        <image name="START" width="75" height="19"/>
+        <image name="button" width="150" height="40"/>
+    </resources>
+</document>
