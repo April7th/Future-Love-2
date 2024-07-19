@@ -46,6 +46,8 @@ class HomeViewController: UIViewController, SETabItemProvider,UITextFieldDelegat
         homeCollectionView.register(UINib(nibName: "Template1CLVCell", bundle: nil), forCellWithReuseIdentifier: "Template1CLVCell")
         homeCollectionView.register(UINib(nibName: "Template2CLVCell", bundle: nil), forCellWithReuseIdentifier: "Template2CLVCell")
         homeCollectionView.register(UINib(nibName: "Template3CLVCell", bundle: nil), forCellWithReuseIdentifier: "Template3CLVCell")
+        homeCollectionView.register(UINib(nibName: "Template4CLVCell", bundle: nil), forCellWithReuseIdentifier: "Template4CLVCell")
+
 
         
         setupUI()
@@ -266,7 +268,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             let item = dataList_All[indexPath.row]
             if item.id_template == 4 {
-                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Template1CLVCell", for: indexPath) as? Template1CLVCell else {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Template4CLVCell", for: indexPath) as? Template4CLVCell else {
                     return UICollectionViewCell()
                 }
                 cell.configCell(model: dataList_All[indexPath.row])

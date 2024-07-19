@@ -638,7 +638,7 @@ struct _R {
     var swapFaceMp4: RswiftResources.FileResource { .init(name: "swap-face", pathExtension: "mp4", bundle: bundle, locale: LocaleReference.none) }
   }
 
-  /// This `_R.nib` struct is generated, and contains static references to 88 nibs.
+  /// This `_R.nib` struct is generated, and contains static references to 91 nibs.
   struct nib {
     let bundle: Foundation.Bundle
 
@@ -879,11 +879,20 @@ struct _R {
     /// Nib `Template1TBVCell`.
     var template1TBVCell: RswiftResources.NibReference<Template1TBVCell> { .init(name: "Template1TBVCell", bundle: bundle) }
 
+    /// Nib `Template2CLVCell`.
+    var template2CLVCell: RswiftResources.NibReferenceReuseIdentifier<Template2CLVCell, Template2CLVCell> { .init(name: "Template2CLVCell", bundle: bundle, identifier: "Template2CLVCell") }
+
     /// Nib `Template2TBVCell`.
     var template2TBVCell: RswiftResources.NibReference<Template2TBVCell> { .init(name: "Template2TBVCell", bundle: bundle) }
 
+    /// Nib `Template3CLVCell`.
+    var template3CLVCell: RswiftResources.NibReferenceReuseIdentifier<Template3CLVCell, Template3CLVCell> { .init(name: "Template3CLVCell", bundle: bundle, identifier: "Template3CLVCell") }
+
     /// Nib `Template3TBVCell`.
     var template3TBVCell: RswiftResources.NibReference<Template3TBVCell> { .init(name: "Template3TBVCell", bundle: bundle) }
+
+    /// Nib `Template4CLVCell`.
+    var template4CLVCell: RswiftResources.NibReferenceReuseIdentifier<Template4CLVCell, Template4CLVCell> { .init(name: "Template4CLVCell", bundle: bundle, identifier: "Template4CLVCell") }
 
     /// Nib `Template4TBVCell`.
     var template4TBVCell: RswiftResources.NibReference<Template4TBVCell> { .init(name: "Template4TBVCell", bundle: bundle) }
@@ -1090,13 +1099,23 @@ struct _R {
       if UIKit.UIImage(named: "count_view", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_view' is used in nib 'Template1TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "logo", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'logo' is used in nib 'Template1TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "template1", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'template1' is used in nib 'Template1TBVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "count_comment", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_comment' is used in nib 'Template2CLVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "count_view", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_view' is used in nib 'Template2CLVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "template2", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'template2' is used in nib 'Template2CLVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "count_comment", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_comment' is used in nib 'Template2TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "count_view", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_view' is used in nib 'Template2TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "template2", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'template2' is used in nib 'Template2TBVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "Template3", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Template3' is used in nib 'Template3CLVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "count_comment", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_comment' is used in nib 'Template3CLVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "count_view", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_view' is used in nib 'Template3CLVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "logo", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'logo' is used in nib 'Template3CLVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "Template3", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Template3' is used in nib 'Template3TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "count_comment", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_comment' is used in nib 'Template3TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "count_view", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_view' is used in nib 'Template3TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "logo", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'logo' is used in nib 'Template3TBVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "count_comment", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_comment' is used in nib 'Template4CLVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "count_view", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_view' is used in nib 'Template4CLVCell', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "template4", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'template4' is used in nib 'Template4CLVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "count_comment", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_comment' is used in nib 'Template4TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "count_view", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'count_view' is used in nib 'Template4TBVCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "template4", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'template4' is used in nib 'Template4TBVCell', but couldn't be loaded.") }
@@ -1104,11 +1123,20 @@ struct _R {
     }
   }
 
-  /// This `_R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `_R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
   struct reuseIdentifier {
 
     /// Reuse identifier `Template1CLVCell`.
     let template1CLVCell: RswiftResources.ReuseIdentifier<Template1CLVCell> = .init(identifier: "Template1CLVCell")
+
+    /// Reuse identifier `Template2CLVCell`.
+    let template2CLVCell: RswiftResources.ReuseIdentifier<Template2CLVCell> = .init(identifier: "Template2CLVCell")
+
+    /// Reuse identifier `Template3CLVCell`.
+    let template3CLVCell: RswiftResources.ReuseIdentifier<Template3CLVCell> = .init(identifier: "Template3CLVCell")
+
+    /// Reuse identifier `Template4CLVCell`.
+    let template4CLVCell: RswiftResources.ReuseIdentifier<Template4CLVCell> = .init(identifier: "Template4CLVCell")
   }
 
   /// This `_R.storyboard` struct is generated, and contains static references to 2 storyboards.
