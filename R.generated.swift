@@ -74,7 +74,7 @@ struct _R {
     var tabbar: RswiftResources.ColorResource { .init(name: "tabbar", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 142 images.
+  /// This `_R.image` struct is generated, and contains static references to 143 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -275,6 +275,9 @@ struct _R {
 
     /// Image `backgroundLove`.
     var backgroundLove: RswiftResources.ImageResource { .init(name: "backgroundLove", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `backgroundScreen`.
+    var backgroundScreen: RswiftResources.ImageResource { .init(name: "backgroundScreen", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `bgr`.
     var bgr: RswiftResources.ImageResource { .init(name: "bgr", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -1060,10 +1063,7 @@ struct _R {
       if UIKit.UIImage(named: "logohome", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'logohome' is used in nib 'SKLoveVC', but couldn't be loaded.") }
       if UIKit.UIImage(named: "vector", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'vector' is used in nib 'SKLoveVC', but couldn't be loaded.") }
       if UIKit.UIImage(named: "back", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'back' is used in nib 'SearchViewController', but couldn't be loaded.") }
-      if UIKit.UIImage(named: "backgroudLogin", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'backgroudLogin' is used in nib 'StartViewController', but couldn't be loaded.") }
-      if UIKit.UIImage(named: "backgroundLoign1", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'backgroundLoign1' is used in nib 'StartViewController', but couldn't be loaded.") }
-      if UIKit.UIImage(named: "luonsong", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'luonsong' is used in nib 'StartViewController', but couldn't be loaded.") }
-      if UIKit.UIImage(named: "luonsong2", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'luonsong2' is used in nib 'StartViewController', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "backgroundScreen", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'backgroundScreen' is used in nib 'StartViewController', but couldn't be loaded.") }
       if UIKit.UIImage(named: "Frame 48097939", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Frame 48097939' is used in nib 'SwapImageImageVC', but couldn't be loaded.") }
       if UIKit.UIImage(named: "Image", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Image' is used in nib 'SwapImageImageVC', but couldn't be loaded.") }
       if UIKit.UIImage(named: "Image (1)", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Image (1)' is used in nib 'SwapImageImageVC', but couldn't be loaded.") }
